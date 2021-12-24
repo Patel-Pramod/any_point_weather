@@ -51,7 +51,6 @@
     <!-- footer -->
 
     {% include "footer.html" %}
- <script src="/static/main.js"></script>
  <script>
    const C_Day = document.getElementById('day');
    const C_Date = document.getElementById('date');
@@ -72,7 +71,7 @@
      C_Day.innerHTML = days;
 
 
-     {% comment %} const month = new Array();
+     const month = new Array();
      month[0] = "Jan";
      month[1] = "Feb";
      month[2] = "Mar";
@@ -88,8 +87,9 @@
 
      let Months = month[d.getMonth()];
 
-     C_Date.innerHTML = dates + Months; {% endcomment %}
+     C_Date.innerHTML = dates + Months;
  </script>
+ <script src="/static/main.js"></script>
     
    
     
